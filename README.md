@@ -66,10 +66,20 @@ make clean
 
 ## Install
 
+Installing from source:
 ```sh
 sudo install -Dm755 target/release/mangobar /usr/local/bin/mangobar
 # or
 sudo make install
+```
+
+You can also install for Fedora and its derivatives through the [Terra Repository](https://terrapkg.com/):
+```sh
+# Install the Terra Repository
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+
+# Install mangobar
+sudo dnf install mangobar
 ```
 
 ## Run
